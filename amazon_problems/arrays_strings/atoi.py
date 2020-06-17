@@ -21,3 +21,4 @@ class Solution(object):
 ob = Solution()
 print ob.myAtoi('   -42')
 print ob.myAtoi("-91283472332")
+print ob.myAtoi("  -0012a42")
