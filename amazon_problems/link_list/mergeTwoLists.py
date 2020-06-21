@@ -22,20 +22,14 @@ class Solution(object):
 
             if data_l1 <= data_l2:
                 temp_list = ListNode(data_l1)
-                new_list.next = temp_list
+                
                 head_l1 = head_l1.next if hasattr(head_l1, 'next') else None
-                new_list = new_list.next
+                
             elif data_l2 < data_l1:
                 temp_list = ListNode(data_l2)
-                new_list.next = temp_list
                 head_l2 = head_l2.next if hasattr(head_l2, 'next') else None
-                new_list = new_list.next
+            
+            new_list.next = temp_list
+            new_list = new_list.next
             
         return head_new_list.next
-                
-            
-            
-            
-            
-            
-        
